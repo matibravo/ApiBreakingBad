@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BreakingBad Api</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="btnUp ocultar">&uarr;</div>
+    <header class="header">
+        <h1>BreakingBad Api</h1> 
+        <input class="busqueda" type="search" name="busqueda" placeholder="Buscar...">               
+    </header>
+    <main class="container">               
+        <article class="container-cards">         
+        </article>              
+    </main> 
+    <footer class="footer">
+        <p> <small>Sitio Creado por <a href="https://www.linkedin.com/in/matias-bravo-castro-98a3a36a/" target="_blanck">MatiBravo</a></small> </p>
+    </footer>      
+    <template id="template-card">
+        <div class="cards">
+            <input class="info" type="button" value="+info">
+            <img >
+            <div class="datos">
+                <p class="id"></p>
+                <p class="nombre"></p>
+                <p class="alias"></p>                                                 
+                    <div class="datosOcultos ">
+                        <p class="cumpleanio"></p>
+                        <p class="ocupacion"></p>
+                        <p class="temporada"></p>
+                        <p class="estado"></p>
+                    </div>
+            </div> 
+        </div>
+    </template>      
+    <script src="/js/fetch.js"></script>  
+    
+</body>
+</html>

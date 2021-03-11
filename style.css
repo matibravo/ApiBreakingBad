@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+    font-family: cursive;
+    background-color: whitesmoke;
+    scroll-behavior: smooth;
+}
+
+hr{
+    color: whitesmoke;
+    
+}
+img{
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: yellow;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+    padding: 1rem;
+}
+
+.busqueda{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.container-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+}
+
+.cards{
+    padding: 20px;
+    position: relative;
+}
+
+.info{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    top: 2rem;
+    right: 2rem;
+    position: absolute;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.datos{
+    background-color: black;
+    color: whitesmoke;
+    margin-top: -0.3rem;
+    padding: 1rem;
+}
+
+.oculto{
+    display: none;
+    transition: all 3s ease;  
+}
+
+
+.footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    font-weight: bold;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.btnUp{
+    bottom: 6rem;
+    right: 2rem;
+    height: 3rem;
+    width: 3rem;
+    background-color: black;
+    color: whitesmoke;
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.btnUp:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.ocultar{
+    visibility: hidden;
+    opacity: 0;
+}
+
