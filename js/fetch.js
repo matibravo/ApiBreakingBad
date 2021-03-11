@@ -8,7 +8,8 @@ const $fragmento = document.createDocumentFragment(),
 const getAll = async ()=>{
 
     try {
-        let respuesta = await fetch("https://breakingbadapi.com/api/characters"),
+        //let respuesta = await fetch("https://breakingbadapi.com/api/characters"),
+        let respuesta = await fetch("/assets/bd.json"),
             json = await respuesta.json();
 
             console.log(respuesta, json);
