@@ -61,7 +61,7 @@ document.addEventListener("keyup", e=>{
     document.querySelectorAll(".cards").forEach(element =>{
         //console.log(element.textContent); //me trae el texto q contiene el elemento
 
-        (element.textContent.includes(e.target.value))
+        (element.textContent.ToLowerCase().includes(e.target.value))
         ? element.classList.remove("oculto")
         :element.classList.add("oculto");
         
