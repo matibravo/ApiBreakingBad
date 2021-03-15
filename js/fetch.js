@@ -71,15 +71,17 @@ document.addEventListener("keyup", e=>{
 });
 
 document.addEventListener("touchend", e=>{
-    
-    document.querySelectorAll(".cards").forEach(element =>{
-        //console.log(element.textContent); //me trae el texto q contiene el elemento
 
-        (element.textContent.toLowerCase().includes(e.target.value))
-        ? element.classList.remove("oculto")
-        :element.classList.add("oculto");
-        
-    });
+    if(e.target.matches(".busqueda")){
+        document.querySelectorAll(".cards").forEach(element =>{
+            //console.log(element.textContent); //me trae el texto q contiene el elemento
+    
+            (element.textContent.toLowerCase().includes(e.target.value))
+            ? element.classList.remove("oculto")
+            :element.classList.add("oculto");
+            
+        });
+    }   
     
 });
 
