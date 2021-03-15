@@ -61,7 +61,7 @@ document.addEventListener("keyup", e=>{
     document.querySelectorAll(".cards").forEach(element =>{
         //console.log(element.textContent); //me trae el texto q contiene el elemento
 
-        (element.textContent.toLowerCase().includes(e.target.value))
+        (element.textContent.includes(e.target.value))
         ? element.classList.remove("oculto")
         :element.classList.add("oculto");
         
@@ -70,24 +70,7 @@ document.addEventListener("keyup", e=>{
     
 });
 
-document.getElementById("busqueda").addEventListener("touchend", e=>{
-    console.log(e.target.value);
-});
 
-/*document.addEventListener("touchend", e=>{
-
-    
-        document.querySelectorAll(".cards").forEach(element =>{
-            //console.log(element.textContent); //me trae el texto q contiene el elemento
-    
-            (element.textContent.toLowerCase().includes(e.target.value))
-            ? element.classList.remove("oculto")
-            :element.classList.add("oculto");
-            
-        });
-     
-    
-});*/
 
 window.addEventListener("scroll", e=>{
 
