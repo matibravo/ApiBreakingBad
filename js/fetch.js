@@ -70,9 +70,13 @@ document.addEventListener("keyup", e=>{
     
 });
 
-document.addEventListener("touchend", e=>{
+document.getElementById("busqueda").addEventListener("touchend", e=>{
+    console.log(e.target.value);
+});
 
-    if(e.target.matches(".busqueda")){
+/*document.addEventListener("touchend", e=>{
+
+    
         document.querySelectorAll(".cards").forEach(element =>{
             //console.log(element.textContent); //me trae el texto q contiene el elemento
     
@@ -81,9 +85,9 @@ document.addEventListener("touchend", e=>{
             :element.classList.add("oculto");
             
         });
-    }   
+     
     
-});
+});*/
 
 window.addEventListener("scroll", e=>{
 
