@@ -8,6 +8,7 @@ const $fragmento = document.createDocumentFragment(),
 const getAll = async ()=>{
 
     try {
+        $contenedorTarjetas.innerHTML = `<img class="load" src="./assets/puff.svg" alt="Cargando">`;
         let respuesta = await fetch("https://breakingbadapi.com/api/characters"),
             json = await respuesta.json();
 
@@ -17,7 +18,7 @@ const getAll = async ()=>{
 
             json.forEach(element => {
                 //template
-
+                
                 $template.querySelector(".info").id = element.char_id;
                 $template.querySelector("img").setAttribute("src", element.img);
                 $template.querySelector(".id").textContent = `Id: ${element.char_id}`;
@@ -34,7 +35,7 @@ const getAll = async ()=>{
                 $fragmento.appendChild($clone);             
                 
             });
-
+            $contenedorTarjetas.innerHTML = "";
             $contenedorTarjetas.appendChild($fragmento);
 
             

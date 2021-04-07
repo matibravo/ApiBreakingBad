@@ -129,3 +129,10 @@ a:hover{
     opacity: 0;
 }
 
+/*loader*/
+.load{
+    width: 60px;
+    display: block;
+    margin: auto;
+}
+
